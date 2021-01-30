@@ -1,0 +1,41 @@
+/* Sombras */
+#box
+{
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #009670;
+    text-align: center;
+    /*border-radius: 20px 80px;*/
+    box-shadow: 10px 10px rgb(85, 84, 84);
+    animation-name: animacao-box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#box h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 3px rgb(85, 84, 84) ;
+}
+button{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);      
+}
+
+/* Animações */
+@keyframes animacao-box{
+    from{border-radius: 20px 80px;}
+    to{border-radius: 80px 20px;}
+}
+
+/* Transições */
+button:hover{
+    padding: 5px;
+    border-radius: 0;
+    transition-duration: 0.8s;
+    background-color: rgb(233, 233, 233);
+}
